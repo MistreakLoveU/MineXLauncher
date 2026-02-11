@@ -1,267 +1,272 @@
 <!doctype html>
 <html lang="en" style="display: none">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MineXLauncher</title>
-		<link
-			rel="icon"
-			type="image/webp"
-			href="/resources/images/icons/favicon.webp"
-		/>
-		<link rel="stylesheet" href="/resources/styles/themes/default.css" />
-		<link
-			rel="stylesheet"
-			id="theme"
-			onload="document.documentElement.style.display = ''"
-		/>
-		<script src="/resources/scripts/google-tag.js"></script>
-		<script src="/resources/scripts/main.js"></script>
-	</head>
-	<body>
-		<div class="ads-container">
-			<ins
-				class="adsbygoogle"
-				style="display: block"
-				data-ad-client="ca-pub-1132419379737567"
-				data-ad-slot="3280170072"
-				data-ad-format="auto"
-				data-full-width-responsive="true"
-			></ins>
-		</div>
-		<div class="launcher">
-			<span class="title-bar">MineXLauncher</span>
-			<div class="content">
-				<div class="sidebar">
-					<span class="username"></span>
-					<nav class="nav-bar">
-						<li onclick="navigate.updates()">
-							<img src="/resources/images/icons/nav/updates.webp" />
-							<span>Updates</span>
-						</li>
-						<li class="selected" onclick="navigate.home.game()">
-							<img src="/resources/images/icons/nav/game.webp" />
-							<span>Game</span>
-						</li>
-						<li onclick="navigate.servers()">
-							<img src="/resources/images/icons/nav/servers.webp" />
-							<span>Server List</span>
-						</li>
-						<li onclick="navigate.addons.mods()">
-							<img src="/resources/images/icons/nav/mods.webp" />
-							<span>Mods</span>
-						</li>
-						<li onclick="navigate.articles()">
-							<img src="/resources/images/icons/nav/articles.webp" />
-							<span>Tutorials</span>
-						</li>
-						<li onclick="navigate.settings.general()">
-							<img src="/resources/images/icons/nav/settings.webp" />
-							<span>Settings</span>
-						</li>
-					</nav>
-				</div>
-				<div class="main-panel">
-					<div class="top-nav">
-						<ul>
-							<li onclick="navigate.home.game()">Game</li>
-							<li onclick="navigate.home.clients()">Clients</li>
-							<li class="selected" onclick="navigate.home.archive()">
-								Archive
-							</li>
-							<li onclick="navigate.home.downloads()">Offline Downloads</li>
-						</ul>
-					</div>
-					<div class="main-content">
-						<div class="archive">
-							<div>
-								<label for="18-client-version">1.8 versions:</label>
-								<select id="18-client-version">
-									<option disabled selected hidden value="">
-										Select version
-									</option>
-									<optgroup label="Releases">
-										<option value="u38">u38</option>
-										<option value="u37">u37</option>
-										<option value="u36">u36</option>
-										<option value="u35">u35</option>
-										<option value="u34">u34</option>
-										<option value="u33">u33</option>
-										<option value="u32">u32</option>
-										<option value="u31">u31</option>
-										<option value="u30">u30</option>
-										<option value="u29">u29</option>
-										<option value="u28">u28</option>
-										<option value="u27">u27</option>
-										<option value="u26">u26</option>
-										<option value="u25">u25</option>
-										<option value="u24">u24</option>
-										<option value="u23">u23</option>
-										<option value="u22">u22</option>
-										<option value="u21">u21</option>
-										<option value="u20">u20</option>
-										<option value="u19">u19</option>
-										<option value="u18">u18</option>
-										<option value="u17">u17</option>
-										<option value="u16">u16</option>
-										<option value="u15">u15</option>
-										<option value="u14">u14</option>
-										<option value="u13">u13</option>
-										<option value="u12">u12</option>
-										<option value="u11">u11</option>
-										<option value="u10">u10</option>
-										<option value="u9">u9</option>
-										<option value="u8">u8</option>
-										<option value="u7">u7</option>
-										<option value="u6">u6</option>
-										<option value="u5">u5</option>
-										<option value="u4">u4</option>
-										<option value="u3">u3</option>
-										<option value="u2">u2</option>
-										<option value="u1">u1</option>
-										<option value="u0">u0</option>
-									</optgroup>
-									<optgroup label="Pre-Releases">
-										<option value="rc-03">rc-03</option>
-										<option value="rc-02">rc-02</option>
-										<option value="rc-01">rc-01</option>
-										<option value="pre-alpha">pre-alpha</option>
-									</optgroup>
-								</select>
-								<button onclick="game.archive('1.8')">Open</button>
-							</div>
-							<div>
-								<label for="15-client-version">1.5 versions:</label>
-								<select id="15-client-version">
-									<option disabled selected hidden value="">
-										Select version
-									</option>
-									<optgroup label="Service Packs">
-										<option value="sp1.01">sp1.01</option>
-										<option value="sp1">sp1</option>
-									</optgroup>
-									<optgroup label="Releases">
-										<option value="22w43a">22w43a</option>
-										<option value="22w42c">22w42c</option>
-										<option value="22w42b">22w42b</option>
-										<option value="22w42a">22w42a</option>
-										<option value="22w41a">22w41a</option>
-										<option value="22w40a">22w40a</option>
-										<option value="22w38a">22w38a</option>
-										<option value="22w36a">22w36a</option>
-										<option value="22w35c">22w35c</option>
-										<option value="22w35b">22w35b</option>
-										<option value="22w35a">22w35a</option>
-										<option value="22w34d">22w34d</option>
-										<option value="22w34c">22w34c</option>
-										<option value="22w34b">22w34b</option>
-										<option value="22w34a">22w34a</option>
-										<option value="22w30a">22w30a</option>
-										<option value="22w29b">22w29b</option>
-										<option value="22w29a">22w29a</option>
-										<option value="22w23c">22w23c</option>
-										<option value="22w23b">22w23b</option>
-										<option value="22w23a">22w23a</option>
-										<option value="22w22a">22w22a</option>
-										<option value="22w20b">22w20b</option>
-										<option value="22w20a">22w20a</option>
-										<option value="22w19a">22w19a</option>
-										<option value="22w16h">22w16h</option>
-										<option value="22w16g">22w16g</option>
-										<option value="22w16f">22w16f</option>
-										<option value="22w16e">22w16e</option>
-										<option value="22w16d">22w16d</option>
-										<option value="22w16c">22w16c</option>
-										<option value="22w16b">22w16b</option>
-										<option value="22w16a">22w16a</option>
-										<option value="22w15d">22w15d</option>
-										<option value="22w15c">22w15c</option>
-										<option value="22w15b">22w15b</option>
-										<option value="22w15a">22w15a</option>
-										<option value="22w14d">22w14d</option>
-										<option value="22w14c">22w14c</option>
-										<option value="22w14b">22w14b</option>
-										<option value="22w14a">22w14a</option>
-										<option value="22w13i">22w13i</option>
-										<option value="22w13h">22w13h</option>
-										<option value="22w13g">22w13g</option>
-										<option value="22w13f">22w13f</option>
-										<option value="22w13e">22w13e</option>
-										<option value="22w13d">22w13d</option>
-										<option value="22w13c">22w13c</option>
-										<option value="22w13b">22w13b</option>
-										<option value="22w13a">22w13a</option>
-										<option value="22w10d">22w10d</option>
-										<option value="22w10c">22w10c</option>
-										<option value="22w10b">22w10b</option>
-										<option value="22w10a">22w10a</option>
-										<option value="22w07a">22w07a</option>
-										<option value="22w04b">22w04b</option>
-										<option value="22w04a">22w04a</option>
-										<option value="22w03c">22w03c</option>
-										<option value="22w03b">22w03b</option>
-										<option value="22m03a">22m03a</option>
-										<option value="22m02a">22m02a</option>
-										<option value="22m01a">22m01a</option>
-									</optgroup>
-									<optgroup label="Pre-Releases">
-										<option value="21m12-24">21m12-24</option>
-										<option value="21m12-17">21m12-17</option>
-										<option value="20m06-29">20m06-29</option>
-									</optgroup>
-								</select>
-								<button onclick="game.archive('1.5')">Open</button>
-							</div>
-							<div>
-								<label for="b13-client-version">Select Beta 1.3 version:</label>
-								<select id="b13-client-version">
-									<option disabled selected hidden value="">
-										Select version
-									</option>
-									<optgroup label="Releases">
-										<option value="23w49a">23w49a</option>
-										<option value="22w22b">22w22b</option>
-										<option value="22w22a">22w22a</option>
-										<option value="22w17a">22w17a</option>
-									</optgroup>
-								</select>
-								<button onclick="game.archive('b1.3')">Open</button>
-							</div>
-							<button
-								onclick="window.open('https://archive.eaglercraft.rip/EaglercraftX_1.8/server/')"
-							>
-								1.8 EaglerXBungee Jar
-							</button>
-							<button
-								onclick="window.open('https://archive.eaglercraft.rip/Eaglercraft_1.5/server/')"
-							>
-								Eaglercraft 1.5 Server
-							</button>
-							<button
-								onclick="window.open('https://archive.eaglercraft.rip/Eaglercraft_b1.3/server/')"
-							>
-								Eaglercraft Beta 1.3 Server
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="bottom-bar">
-				<span onclick="window.open('https://discord.gg/VRwbRJjXzt')"
-					>Join the MineXLauncher Discord</span
-				>
-				<span>© 2024 MineXLauncher. All rights reserved.</span>
-			</div>
-		</div>
-		<div class="ads-container">
-			<ins
-				class="adsbygoogle"
-				style="display: block"
-				data-ad-client="ca-pub-1132419379737567"
-				data-ad-slot="3280170072"
-				data-ad-format="auto"
-				data-full-width-responsive="true"
-			></ins>
-		</div>
-	</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MineXLauncher</title>
+      <link
+      rel="icon"
+      type="image/webp"
+      href="/resources/images/icons/favicon.webp"
+      />
+      <link rel="stylesheet" href="/resources/styles/themes/default.css" />
+      <link
+      rel="stylesheet"
+      id="theme"
+      onload="document.documentElement.style.display = ''"
+      />
+      <script src="/resources/scripts/google-tag.js">
+    </script>
+    <script src="/resources/scripts/main.js">
+  </script>
+</head>
+<body>
+  <div class="ads-container">
+    <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="ca-pub-1132419379737567"
+    data-ad-slot="3280170072"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+    >
+  </ins>
+</div>
+<div class="launcher">
+  <span class="title-bar">MineXLauncher</span>
+    <div class="content">
+      <div class="sidebar">
+        <span class="username">
+        </span>
+        <nav class="nav-bar">
+          <li onclick="navigate.updates()">
+            <img src="/resources/images/icons/nav/updates.webp" />
+            <span>Updates</span>
+            </li>
+            <li class="selected" onclick="navigate.home.game()">
+              <img src="/resources/images/icons/nav/game.webp" />
+              <span>Game</span>
+              </li>
+              <li onclick="navigate.servers()">
+                <img src="/resources/images/icons/nav/servers.webp" />
+                <span>Server List</span>
+                </li>
+                <li onclick="navigate.addons.mods()">
+                  <img src="/resources/images/icons/nav/mods.webp" />
+                  <span>Mods</span>
+                  </li>
+                  <li onclick="navigate.articles()">
+                    <img src="/resources/images/icons/nav/articles.webp" />
+                    <span>Tutorials</span>
+                    </li>
+                    <li onclick="navigate.settings.general()">
+                      <img src="/resources/images/icons/nav/settings.webp" />
+                      <span>Settings</span>
+                      </li>
+                    </nav>
+                  </div>
+                  <div class="main-panel">
+                    <div class="top-nav">
+                      <ul>
+                        <li onclick="navigate.home.game()">Game</li>
+                          <li onclick="navigate.home.clients()">Clients</li>
+                            <li class="selected" onclick="navigate.home.archive()">
+                              Archive
+                            </li>
+                            <li onclick="navigate.home.downloads()">Offline Downloads</li>
+                            </ul>
+                          </div>
+                          <div class="main-content">
+                            <div class="archive">
+                              <div>
+                                <label for="18-client-version">1.8 versions:</label>
+                                  <select id="18-client-version">
+                                    <option disabled selected hidden value="">
+                                      Select version
+                                    </option>
+                                    <optgroup label="Releases">
+                                      <option value="u38">u38</option>
+                                        <option value="u37">u37</option>
+                                          <option value="u36">u36</option>
+                                            <option value="u35">u35</option>
+                                              <option value="u34">u34</option>
+                                                <option value="u33">u33</option>
+                                                  <option value="u32">u32</option>
+                                                    <option value="u31">u31</option>
+                                                      <option value="u30">u30</option>
+                                                        <option value="u29">u29</option>
+                                                          <option value="u28">u28</option>
+                                                            <option value="u27">u27</option>
+                                                              <option value="u26">u26</option>
+                                                                <option value="u25">u25</option>
+                                                                  <option value="u24">u24</option>
+                                                                    <option value="u23">u23</option>
+                                                                      <option value="u22">u22</option>
+                                                                        <option value="u21">u21</option>
+                                                                          <option value="u20">u20</option>
+                                                                            <option value="u19">u19</option>
+                                                                              <option value="u18">u18</option>
+                                                                                <option value="u17">u17</option>
+                                                                                  <option value="u16">u16</option>
+                                                                                    <option value="u15">u15</option>
+                                                                                      <option value="u14">u14</option>
+                                                                                        <option value="u13">u13</option>
+                                                                                          <option value="u12">u12</option>
+                                                                                            <option value="u11">u11</option>
+                                                                                              <option value="u10">u10</option>
+                                                                                                <option value="u9">u9</option>
+                                                                                                  <option value="u8">u8</option>
+                                                                                                    <option value="u7">u7</option>
+                                                                                                      <option value="u6">u6</option>
+                                                                                                        <option value="u5">u5</option>
+                                                                                                          <option value="u4">u4</option>
+                                                                                                            <option value="u3">u3</option>
+                                                                                                              <option value="u2">u2</option>
+                                                                                                                <option value="u1">u1</option>
+                                                                                                                  <option value="u0">u0</option>
+                                                                                                                  </optgroup>
+                                                                                                                  <optgroup label="Pre-Releases">
+                                                                                                                    <option value="rc-03">rc-03</option>
+                                                                                                                      <option value="rc-02">rc-02</option>
+                                                                                                                        <option value="rc-01">rc-01</option>
+                                                                                                                          <option value="pre-alpha">pre-alpha</option>
+                                                                                                                          </optgroup>
+                                                                                                                        </select>
+                                                                                                                        <button onclick="game.archive('1.8')">Open</button>
+                                                                                                                        </div>
+                                                                                                                        <div>
+                                                                                                                          <label for="15-client-version">1.5 versions:</label>
+                                                                                                                            <select id="15-client-version">
+                                                                                                                              <option disabled selected hidden value="">
+                                                                                                                                Select version
+                                                                                                                              </option>
+                                                                                                                              <optgroup label="Service Packs">
+                                                                                                                                <option value="sp1.01">sp1.01</option>
+                                                                                                                                  <option value="sp1">sp1</option>
+                                                                                                                                  </optgroup>
+                                                                                                                                  <optgroup label="Releases">
+                                                                                                                                    <option value="22w43a">22w43a</option>
+                                                                                                                                      <option value="22w42c">22w42c</option>
+                                                                                                                                        <option value="22w42b">22w42b</option>
+                                                                                                                                          <option value="22w42a">22w42a</option>
+                                                                                                                                            <option value="22w41a">22w41a</option>
+                                                                                                                                              <option value="22w40a">22w40a</option>
+                                                                                                                                                <option value="22w38a">22w38a</option>
+                                                                                                                                                  <option value="22w36a">22w36a</option>
+                                                                                                                                                    <option value="22w35c">22w35c</option>
+                                                                                                                                                      <option value="22w35b">22w35b</option>
+                                                                                                                                                        <option value="22w35a">22w35a</option>
+                                                                                                                                                          <option value="22w34d">22w34d</option>
+                                                                                                                                                            <option value="22w34c">22w34c</option>
+                                                                                                                                                              <option value="22w34b">22w34b</option>
+                                                                                                                                                                <option value="22w34a">22w34a</option>
+                                                                                                                                                                  <option value="22w30a">22w30a</option>
+                                                                                                                                                                    <option value="22w29b">22w29b</option>
+                                                                                                                                                                      <option value="22w29a">22w29a</option>
+                                                                                                                                                                        <option value="22w23c">22w23c</option>
+                                                                                                                                                                          <option value="22w23b">22w23b</option>
+                                                                                                                                                                            <option value="22w23a">22w23a</option>
+                                                                                                                                                                              <option value="22w22a">22w22a</option>
+                                                                                                                                                                                <option value="22w20b">22w20b</option>
+                                                                                                                                                                                  <option value="22w20a">22w20a</option>
+                                                                                                                                                                                    <option value="22w19a">22w19a</option>
+                                                                                                                                                                                      <option value="22w16h">22w16h</option>
+                                                                                                                                                                                        <option value="22w16g">22w16g</option>
+                                                                                                                                                                                          <option value="22w16f">22w16f</option>
+                                                                                                                                                                                            <option value="22w16e">22w16e</option>
+                                                                                                                                                                                              <option value="22w16d">22w16d</option>
+                                                                                                                                                                                                <option value="22w16c">22w16c</option>
+                                                                                                                                                                                                  <option value="22w16b">22w16b</option>
+                                                                                                                                                                                                    <option value="22w16a">22w16a</option>
+                                                                                                                                                                                                      <option value="22w15d">22w15d</option>
+                                                                                                                                                                                                        <option value="22w15c">22w15c</option>
+                                                                                                                                                                                                          <option value="22w15b">22w15b</option>
+                                                                                                                                                                                                            <option value="22w15a">22w15a</option>
+                                                                                                                                                                                                              <option value="22w14d">22w14d</option>
+                                                                                                                                                                                                                <option value="22w14c">22w14c</option>
+                                                                                                                                                                                                                  <option value="22w14b">22w14b</option>
+                                                                                                                                                                                                                    <option value="22w14a">22w14a</option>
+                                                                                                                                                                                                                      <option value="22w13i">22w13i</option>
+                                                                                                                                                                                                                        <option value="22w13h">22w13h</option>
+                                                                                                                                                                                                                          <option value="22w13g">22w13g</option>
+                                                                                                                                                                                                                            <option value="22w13f">22w13f</option>
+                                                                                                                                                                                                                              <option value="22w13e">22w13e</option>
+                                                                                                                                                                                                                                <option value="22w13d">22w13d</option>
+                                                                                                                                                                                                                                  <option value="22w13c">22w13c</option>
+                                                                                                                                                                                                                                    <option value="22w13b">22w13b</option>
+                                                                                                                                                                                                                                      <option value="22w13a">22w13a</option>
+                                                                                                                                                                                                                                        <option value="22w10d">22w10d</option>
+                                                                                                                                                                                                                                          <option value="22w10c">22w10c</option>
+                                                                                                                                                                                                                                            <option value="22w10b">22w10b</option>
+                                                                                                                                                                                                                                              <option value="22w10a">22w10a</option>
+                                                                                                                                                                                                                                                <option value="22w07a">22w07a</option>
+                                                                                                                                                                                                                                                  <option value="22w04b">22w04b</option>
+                                                                                                                                                                                                                                                    <option value="22w04a">22w04a</option>
+                                                                                                                                                                                                                                                      <option value="22w03c">22w03c</option>
+                                                                                                                                                                                                                                                        <option value="22w03b">22w03b</option>
+                                                                                                                                                                                                                                                          <option value="22m03a">22m03a</option>
+                                                                                                                                                                                                                                                            <option value="22m02a">22m02a</option>
+                                                                                                                                                                                                                                                              <option value="22m01a">22m01a</option>
+                                                                                                                                                                                                                                                              </optgroup>
+                                                                                                                                                                                                                                                              <optgroup label="Pre-Releases">
+                                                                                                                                                                                                                                                                <option value="21m12-24">21m12-24</option>
+                                                                                                                                                                                                                                                                  <option value="21m12-17">21m12-17</option>
+                                                                                                                                                                                                                                                                    <option value="20m06-29">20m06-29</option>
+                                                                                                                                                                                                                                                                    </optgroup>
+                                                                                                                                                                                                                                                                  </select>
+                                                                                                                                                                                                                                                                  <button onclick="game.archive('1.5')">Open</button>
+                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                  <div>
+                                                                                                                                                                                                                                                                    <label for="b13-client-version">Select Beta 1.3 version:</label>
+                                                                                                                                                                                                                                                                      <select id="b13-client-version">
+                                                                                                                                                                                                                                                                        <option disabled selected hidden value="">
+                                                                                                                                                                                                                                                                          Select version
+                                                                                                                                                                                                                                                                        </option>
+                                                                                                                                                                                                                                                                        <optgroup label="Releases">
+                                                                                                                                                                                                                                                                          <option value="23w49a">23w49a</option>
+                                                                                                                                                                                                                                                                            <option value="22w22b">22w22b</option>
+                                                                                                                                                                                                                                                                              <option value="22w22a">22w22a</option>
+                                                                                                                                                                                                                                                                                <option value="22w17a">22w17a</option>
+                                                                                                                                                                                                                                                                                </optgroup>
+                                                                                                                                                                                                                                                                              </select>
+                                                                                                                                                                                                                                                                              <button onclick="game.archive('b1.3')">Open</button>
+                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                              <button
+                                                                                                                                                                                                                                                                              onclick="window.open('https://archive.eaglercraft.rip/EaglercraftX_1.8/server/')"
+                                                                                                                                                                                                                                                                              >
+                                                                                                                                                                                                                                                                              1.8 EaglerXBungee Jar
+                                                                                                                                                                                                                                                                            </button>
+                                                                                                                                                                                                                                                                            <button
+                                                                                                                                                                                                                                                                            onclick="window.open('https://archive.eaglercraft.rip/Eaglercraft_1.5/server/')"
+                                                                                                                                                                                                                                                                            >
+                                                                                                                                                                                                                                                                            Eaglercraft 1.5 Server
+                                                                                                                                                                                                                                                                          </button>
+                                                                                                                                                                                                                                                                          <button
+                                                                                                                                                                                                                                                                          onclick="window.open('https://archive.eaglercraft.rip/Eaglercraft_b1.3/server/')"
+                                                                                                                                                                                                                                                                          >
+                                                                                                                                                                                                                                                                          Eaglercraft Beta 1.3 Server
+                                                                                                                                                                                                                                                                        </button>
+                                                                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                <div class="bottom-bar">
+                                                                                                                                                                                                                                                                  <span onclick="window.open('https://discord.gg/VRwbRJjXzt')"
+                                                                                                                                                                                                                                                                  >Join the MineXLauncher Discord</span
+                                                                                                                                                                                                                                                                  >
+                                                                                                                                                                                                                                                                  <span>© 2024 MineXLauncher. All rights reserved.</span>
+                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                <div class="ads-container">
+                                                                                                                                                                                                                                                                  <ins
+                                                                                                                                                                                                                                                                  class="adsbygoogle"
+                                                                                                                                                                                                                                                                  style="display: block"
+                                                                                                                                                                                                                                                                  data-ad-client="ca-pub-1132419379737567"
+                                                                                                                                                                                                                                                                  data-ad-slot="3280170072"
+                                                                                                                                                                                                                                                                  data-ad-format="auto"
+                                                                                                                                                                                                                                                                  data-full-width-responsive="true"
+                                                                                                                                                                                                                                                                  >
+                                                                                                                                                                                                                                                                </ins>
+                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                            </body>
+                                                                                                                                                                                                                                                          </html>

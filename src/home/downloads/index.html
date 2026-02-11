@@ -1,161 +1,167 @@
 <!doctype html>
 <html lang="en" style="display: none">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MineXLauncher</title>
-		<link
-			rel="icon"
-			type="image/webp"
-			href="/resources/images/icons/favicon.webp"
-		/>
-		<link rel="stylesheet" href="/resources/styles/themes/default.css" />
-		<link
-			rel="stylesheet"
-			id="theme"
-			onload="document.documentElement.style.display = ''"
-		/>
-		<script src="/resources/scripts/google-tag.js"></script>
-		<script src="/resources/scripts/main.js"></script>
-	</head>
-	<body>
-		<div class="ads-container">
-			<ins
-				class="adsbygoogle"
-				style="display: block"
-				data-ad-client="ca-pub-1132419379737567"
-				data-ad-slot="3280170072"
-				data-ad-format="auto"
-				data-full-width-responsive="true"
-			></ins>
-		</div>
-		<div class="launcher">
-			<span class="title-bar">MineXLauncher</span>
-			<div class="content">
-				<div class="sidebar">
-					<span class="username"></span>
-					<nav class="nav-bar">
-						<li onclick="navigate.updates()">
-							<img src="/resources/images/icons/nav/updates.webp" />
-							<span>Updates</span>
-						</li>
-						<li class="selected" onclick="navigate.home.game()">
-							<img src="/resources/images/icons/nav/game.webp" />
-							<span>Game</span>
-						</li>
-						<li onclick="navigate.servers()">
-							<img src="/resources/images/icons/nav/servers.webp" />
-							<span>Server List</span>
-						</li>
-						<li onclick="navigate.addons.mods()">
-							<img src="/resources/images/icons/nav/mods.webp" />
-							<span>Mods</span>
-						</li>
-						<li onclick="navigate.articles()">
-							<img src="/resources/images/icons/nav/articles.webp" />
-							<span>Tutorials</span>
-						</li>
-						<li onclick="navigate.settings.general()">
-							<img src="/resources/images/icons/nav/settings.webp" />
-							<span>Settings</span>
-						</li>
-					</nav>
-				</div>
-				<div class="main-panel">
-					<div class="top-nav">
-						<ul>
-							<li onclick="navigate.home.game()">Game</li>
-							<li onclick="navigate.home.clients()">Clients</li>
-							<li onclick="navigate.home.archive()">Archive</li>
-							<li class="selected" onclick="navigate.home.downloads()">
-								Offline Downloads
-							</li>
-						</ul>
-					</div>
-					<div class="main-content">
-						<div class="downloads">
-							<h3>Downloads:</h3>
-							<span
-								onclick="downloadFile('/game/main/1.11.2/offline.html', 'EaglercraftZ_1.11.2.html')"
-								>1.11.2</span
-							>
-							<span
-								onclick="downloadFile('/game/main/1.9.4/offline.html', 'EaglercraftL_1.9.4.html')"
-								>1.9.4</span
-							>
-							<span
-								onclick="downloadFile('/game/main/1.8.8/offline.html', 'EaglercraftX_1.8.8.html')"
-								>1.8.8</span
-							>
-							<span
-								onclick="downloadFile('/game/main/1.5.2/offline.html', 'Eaglercraft_1.5.2.html')"
-								>1.5.2</span
-							>
-							<span
-								onclick="downloadFile('/game/main/1.2.5/offline.html', 'Eaglercraft_1.2.5.html')"
-								>1.2.5</span
-							>
-							<span
-								onclick="downloadFile('/game/main/b1.7.3/offline.html', 'Eaglercraft_b1.7.3.html')"
-								>Beta 1.7.3</span
-							>
-							<span
-								onclick="downloadFile('/game/main/b1.3/offline.html', 'Eaglercraft_b1.3.html')"
-								>Beta 1.3</span
-							>
-							<span
-								onclick="downloadFile('/game/main/a1.2.6/offline.html', 'Eaglercraft_a1.2.6.html')"
-								>Alpha 1.2.6</span
-							>
-							<span
-								onclick="downloadFile('/game/main/indev/offline.html', 'Eaglercraft_Indev.html')"
-								>Indev</span
-							>
-							<br /><br />
-							<span
-								onclick="downloadFile('/game/clients/starlike/offline.html', 'Starlike_Client.html')"
-								>Starlike Client</span
-							>
-							<span
-								onclick="downloadFile('/game/clients/eaglerforge/offline.html', 'EaglerForge.html')"
-								>EaglerForge</span
-							>
-							<span
-								onclick="downloadFile('/game/clients/resent/offline.html', 'Resent_Client.html')"
-								>Resent Client</span
-							>
-							<span
-								onclick="downloadFile('/game/clients/shadow/offline.html', 'Shadow_Client.html')"
-								>Shadow Client</span
-							>
-							<span
-								onclick="downloadFile('/game/clients/astra/offline.html', 'Astra_Client.html')"
-								>Astra Client</span
-							>
-							<span
-								onclick="downloadFile('/game/clients/precision/offline.html', 'Precision_Client.html')"
-								>Precision Client</span
-							>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="bottom-bar">
-				<span onclick="window.open('https://discord.gg/VRwbRJjXzt')"
-					>Join the MineXLauncher Discord</span
-				>
-				<span>© 2024 MineXLauncher. All rights reserved.</span>
-			</div>
-		</div>
-		<div class="ads-container">
-			<ins
-				class="adsbygoogle"
-				style="display: block"
-				data-ad-client="ca-pub-1132419379737567"
-				data-ad-slot="3280170072"
-				data-ad-format="auto"
-				data-full-width-responsive="true"
-			></ins>
-		</div>
-	</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MineXLauncher</title>
+      <link
+      rel="icon"
+      type="image/webp"
+      href="/resources/images/icons/favicon.webp"
+      />
+      <link rel="stylesheet" href="/resources/styles/themes/default.css" />
+      <link
+      rel="stylesheet"
+      id="theme"
+      onload="document.documentElement.style.display = ''"
+      />
+      <script src="/resources/scripts/google-tag.js">
+    </script>
+    <script src="/resources/scripts/main.js">
+  </script>
+</head>
+<body>
+  <div class="ads-container">
+    <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="ca-pub-1132419379737567"
+    data-ad-slot="3280170072"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+    >
+  </ins>
+</div>
+<div class="launcher">
+  <span class="title-bar">MineXLauncher</span>
+    <div class="content">
+      <div class="sidebar">
+        <span class="username">
+        </span>
+        <nav class="nav-bar">
+          <li onclick="navigate.updates()">
+            <img src="/resources/images/icons/nav/updates.webp" />
+            <span>Updates</span>
+            </li>
+            <li class="selected" onclick="navigate.home.game()">
+              <img src="/resources/images/icons/nav/game.webp" />
+              <span>Game</span>
+              </li>
+              <li onclick="navigate.servers()">
+                <img src="/resources/images/icons/nav/servers.webp" />
+                <span>Server List</span>
+                </li>
+                <li onclick="navigate.addons.mods()">
+                  <img src="/resources/images/icons/nav/mods.webp" />
+                  <span>Mods</span>
+                  </li>
+                  <li onclick="navigate.articles()">
+                    <img src="/resources/images/icons/nav/articles.webp" />
+                    <span>Tutorials</span>
+                    </li>
+                    <li onclick="navigate.settings.general()">
+                      <img src="/resources/images/icons/nav/settings.webp" />
+                      <span>Settings</span>
+                      </li>
+                    </nav>
+                  </div>
+                  <div class="main-panel">
+                    <div class="top-nav">
+                      <ul>
+                        <li onclick="navigate.home.game()">Game</li>
+                          <li onclick="navigate.home.clients()">Clients</li>
+                            <li onclick="navigate.home.archive()">Archive</li>
+                              <li class="selected" onclick="navigate.home.downloads()">
+                                Offline Downloads
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="main-content">
+                            <div class="downloads">
+                              <h3>Downloads:</h3>
+                                <span
+                                onclick="downloadFile('/game/main/1.11.2/offline.html', 'EaglercraftZ_1.11.2.html')"
+                                >1.11.2</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/main/1.9.4/offline.html', 'EaglercraftL_1.9.4.html')"
+                                >1.9.4</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/main/1.8.8/offline.html', 'EaglercraftX_1.8.8.html')"
+                                >1.8.8</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/main/1.5.2/offline.html', 'Eaglercraft_1.5.2.html')"
+                                >1.5.2</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/main/1.2.5/offline.html', 'Eaglercraft_1.2.5.html')"
+                                >1.2.5</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/main/b1.7.3/offline.html', 'Eaglercraft_b1.7.3.html')"
+                                >Beta 1.7.3</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/main/b1.3/offline.html', 'Eaglercraft_b1.3.html')"
+                                >Beta 1.3</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/main/a1.2.6/offline.html', 'Eaglercraft_a1.2.6.html')"
+                                >Alpha 1.2.6</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/main/indev/offline.html', 'Eaglercraft_Indev.html')"
+                                >Indev</span
+                                >
+                                <br />
+                                <br />
+                                <span
+                                onclick="downloadFile('/game/clients/starlike/offline.html', 'Starlike_Client.html')"
+                                >Starlike Client</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/clients/eaglerforge/offline.html', 'EaglerForge.html')"
+                                >EaglerForge</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/clients/resent/offline.html', 'Resent_Client.html')"
+                                >Resent Client</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/clients/shadow/offline.html', 'Shadow_Client.html')"
+                                >Shadow Client</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/clients/astra/offline.html', 'Astra_Client.html')"
+                                >Astra Client</span
+                                >
+                                <span
+                                onclick="downloadFile('/game/clients/precision/offline.html', 'Precision_Client.html')"
+                                >Precision Client</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bottom-bar">
+                          <span onclick="window.open('https://discord.gg/VRwbRJjXzt')"
+                          >Join the MineXLauncher Discord</span
+                          >
+                          <span>© 2024 MineXLauncher. All rights reserved.</span>
+                          </div>
+                        </div>
+                        <div class="ads-container">
+                          <ins
+                          class="adsbygoogle"
+                          style="display: block"
+                          data-ad-client="ca-pub-1132419379737567"
+                          data-ad-slot="3280170072"
+                          data-ad-format="auto"
+                          data-full-width-responsive="true"
+                          >
+                        </ins>
+                      </div>
+                    </body>
+                  </html>

@@ -1,147 +1,152 @@
 <!doctype html>
 <html lang="en" style="display: none">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MineXLauncher</title>
-		<link
-			rel="icon"
-			type="image/webp"
-			href="/resources/images/icons/favicon.webp"
-		/>
-		<link rel="stylesheet" href="/resources/styles/themes/default.css" />
-		<link
-			rel="stylesheet"
-			id="theme"
-			onload="document.documentElement.style.display = ''"
-		/>
-		<script src="/resources/scripts/google-tag.js"></script>
-		<script src="/resources/scripts/main.js"></script>
-	</head>
-	<body>
-		<div class="ads-container">
-			<ins
-				class="adsbygoogle"
-				style="display: block"
-				data-ad-client="ca-pub-1132419379737567"
-				data-ad-slot="3280170072"
-				data-ad-format="auto"
-				data-full-width-responsive="true"
-			></ins>
-		</div>
-		<div class="launcher">
-			<span class="title-bar">MineXLauncher</span>
-			<div class="content">
-				<div class="sidebar">
-					<span class="username"></span>
-					<nav class="nav-bar">
-						<li onclick="navigate.updates()">
-							<img src="/resources/images/icons/nav/updates.webp" />
-							<span>Updates</span>
-						</li>
-						<li class="selected" onclick="navigate.home.game()">
-							<img src="/resources/images/icons/nav/game.webp" />
-							<span>Game</span>
-						</li>
-						<li onclick="navigate.servers()">
-							<img src="/resources/images/icons/nav/servers.webp" />
-							<span>Server List</span>
-						</li>
-						<li onclick="navigate.addons.mods()">
-							<img src="/resources/images/icons/nav/mods.webp" />
-							<span>Mods</span>
-						</li>
-						<li onclick="navigate.articles()">
-							<img src="/resources/images/icons/nav/articles.webp" />
-							<span>Tutorials</span>
-						</li>
-						<li onclick="navigate.settings.general()">
-							<img src="/resources/images/icons/nav/settings.webp" />
-							<span>Settings</span>
-						</li>
-					</nav>
-				</div>
-				<div class="main-panel">
-					<div class="top-nav">
-						<ul>
-							<li onclick="navigate.home.game()">Game</li>
-							<li class="selected" onclick="navigate.home.clients()">
-								Clients
-							</li>
-							<li onclick="navigate.home.archive()">Archive</li>
-							<li onclick="navigate.home.downloads()">Offline Downloads</li>
-						</ul>
-					</div>
-					<div class="main-content">
-						<img
-							class="cover-image"
-							src="/resources/images/covers/clients.webp"
-						/>
-					</div>
-					<div class="installations">
-						<div>
-							<span class="selector" onclick="versionSelector.toggle()"
-								>Select a client</span
-							>
-							<div class="options">
-								<div
-									onclick="game.select('https://starlike.orionzleon.me/', 'Starlike Client')"
-								>
-									<img src="https://starlike.orionzleon.me/favicon.png" />
-									<span>Starlike Client</span>
-								</div>
-								<div
-									onclick="game.select('/game/clients/eaglerforge/', 'EaglerForge')"
-								>
-									<img src="/resources/images/icons/clients/eaglerforge.webp" />
-									<span>EaglerForge</span>
-								</div>
-								<div
-									onclick="game.select('/game/clients/resent/', 'Resent Client')"
-								>
-									<img src="/resources/images/icons/clients/resent.webp" />
-									<span>Resent Client</span>
-								</div>
-								<div
-									onclick="game.select('/game/clients/shadow/', 'Shadow Client')"
-								>
-									<img src="/resources/images/icons/clients/shadow.webp" />
-									<span>Shadow Client</span>
-								</div>
-								<div
-									onclick="game.select('/game/clients/astra/', 'Astra Client')"
-								>
-									<img src="/resources/images/icons/clients/astra.webp" />
-									<span>Astra Client</span>
-								</div>
-								<div
-									onclick="game.select('/game/clients/precision/', 'Precision Client')"
-								>
-									<img src="/resources/images/icons/clients/precision.webp" />
-									<span>Precision Client</span>
-								</div>
-							</div>
-						</div>
-						<button onclick="game.play()">Play</button>
-					</div>
-				</div>
-			</div>
-			<div class="bottom-bar">
-				<span onclick="window.open('https://discord.gg/VRwbRJjXzt')"
-					>Join the MineXLauncher Discord</span
-				>
-				<span>© 2024 MineXLauncher. All rights reserved.</span>
-			</div>
-		</div>
-		<div class="ads-container">
-			<ins
-				class="adsbygoogle"
-				style="display: block"
-				data-ad-client="ca-pub-1132419379737567"
-				data-ad-slot="3280170072"
-				data-ad-format="auto"
-				data-full-width-responsive="true"
-			></ins>
-		</div>
-	</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MineXLauncher</title>
+      <link
+      rel="icon"
+      type="image/webp"
+      href="/resources/images/icons/favicon.webp"
+      />
+      <link rel="stylesheet" href="/resources/styles/themes/default.css" />
+      <link
+      rel="stylesheet"
+      id="theme"
+      onload="document.documentElement.style.display = ''"
+      />
+      <script src="/resources/scripts/google-tag.js">
+    </script>
+    <script src="/resources/scripts/main.js">
+  </script>
+</head>
+<body>
+  <div class="ads-container">
+    <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="ca-pub-1132419379737567"
+    data-ad-slot="3280170072"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+    >
+  </ins>
+</div>
+<div class="launcher">
+  <span class="title-bar">MineXLauncher</span>
+    <div class="content">
+      <div class="sidebar">
+        <span class="username">
+        </span>
+        <nav class="nav-bar">
+          <li onclick="navigate.updates()">
+            <img src="/resources/images/icons/nav/updates.webp" />
+            <span>Updates</span>
+            </li>
+            <li class="selected" onclick="navigate.home.game()">
+              <img src="/resources/images/icons/nav/game.webp" />
+              <span>Game</span>
+              </li>
+              <li onclick="navigate.servers()">
+                <img src="/resources/images/icons/nav/servers.webp" />
+                <span>Server List</span>
+                </li>
+                <li onclick="navigate.addons.mods()">
+                  <img src="/resources/images/icons/nav/mods.webp" />
+                  <span>Mods</span>
+                  </li>
+                  <li onclick="navigate.articles()">
+                    <img src="/resources/images/icons/nav/articles.webp" />
+                    <span>Tutorials</span>
+                    </li>
+                    <li onclick="navigate.settings.general()">
+                      <img src="/resources/images/icons/nav/settings.webp" />
+                      <span>Settings</span>
+                      </li>
+                    </nav>
+                  </div>
+                  <div class="main-panel">
+                    <div class="top-nav">
+                      <ul>
+                        <li onclick="navigate.home.game()">Game</li>
+                          <li class="selected" onclick="navigate.home.clients()">
+                            Clients
+                          </li>
+                          <li onclick="navigate.home.archive()">Archive</li>
+                            <li onclick="navigate.home.downloads()">Offline Downloads</li>
+                            </ul>
+                          </div>
+                          <div class="main-content">
+                            <img
+                            class="cover-image"
+                            src="/resources/images/covers/clients.webp"
+                            />
+                          </div>
+                          <div class="installations">
+                            <div>
+                              <span class="selector" onclick="versionSelector.toggle()"
+                              >Select a client</span
+                              >
+                              <div class="options">
+                                <div
+                                onclick="game.select('https://starlike.orionzleon.me/', 'Starlike Client')"
+                                >
+                                <img src="https://starlike.orionzleon.me/favicon.png" />
+                                <span>Starlike Client</span>
+                                </div>
+                                <div
+                                onclick="game.select('/game/clients/eaglerforge/', 'EaglerForge')"
+                                >
+                                <img src="/resources/images/icons/clients/eaglerforge.webp" />
+                                <span>EaglerForge</span>
+                                </div>
+                                <div
+                                onclick="game.select('/game/clients/resent/', 'Resent Client')"
+                                >
+                                <img src="/resources/images/icons/clients/resent.webp" />
+                                <span>Resent Client</span>
+                                </div>
+                                <div
+                                onclick="game.select('/game/clients/shadow/', 'Shadow Client')"
+                                >
+                                <img src="/resources/images/icons/clients/shadow.webp" />
+                                <span>Shadow Client</span>
+                                </div>
+                                <div
+                                onclick="game.select('/game/clients/astra/', 'Astra Client')"
+                                >
+                                <img src="/resources/images/icons/clients/astra.webp" />
+                                <span>Astra Client</span>
+                                </div>
+                                <div
+                                onclick="game.select('/game/clients/precision/', 'Precision Client')"
+                                >
+                                <img src="/resources/images/icons/clients/precision.webp" />
+                                <span>Precision Client</span>
+                                </div>
+                              </div>
+                            </div>
+                            <button onclick="game.play()">Play</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bottom-bar">
+                          <span onclick="window.open('https://discord.gg/VRwbRJjXzt')"
+                          >Join the MineXLauncher Discord</span
+                          >
+                          <span>© 2024 MineXLauncher. All rights reserved.</span>
+                          </div>
+                        </div>
+                        <div class="ads-container">
+                          <ins
+                          class="adsbygoogle"
+                          style="display: block"
+                          data-ad-client="ca-pub-1132419379737567"
+                          data-ad-slot="3280170072"
+                          data-ad-format="auto"
+                          data-full-width-responsive="true"
+                          >
+                        </ins>
+                      </div>
+                    </body>
+                  </html>

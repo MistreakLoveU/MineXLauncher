@@ -1,22 +1,22 @@
 <html>
-	<head>
-		<script>
-			const storage = {
-				session: {
-					get: function (key) {
-						const item = sessionStorage.getItem('minexlauncher');
-						if (item !== null) {
-							const json = JSON.parse(item);
-							if (json[key] !== undefined) {
-								return json[key];
-							}
-							return undefined;
-						}
-						return undefined;
-					},
-				},
-			};
-			window.location.href = storage.session.get('lastGame') ?? '/';
-		</script>
-	</head>
+  <head>
+    <script>
+    const storage = {
+    session: {
+    get: function (key) {
+    const item = sessionStorage.getItem('minexlauncher');
+    if (item !== null) {
+    const json = JSON.parse(item);
+    if (json[key] !== undefined) {
+    return json[key];
+    }
+    return undefined;
+    }
+    return undefined;
+    },
+    },
+    };
+    window.location.href = storage.session.get('lastGame') ?? '/';
+  </script>
+</head>
 </html>

@@ -1,220 +1,227 @@
 <!doctype html>
 <html lang="en" style="display: none">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MineXLauncher</title>
-		<link
-			rel="icon"
-			type="image/webp"
-			href="/resources/images/icons/favicon.webp"
-		/>
-		<link rel="stylesheet" href="/resources/styles/themes/default.css" />
-		<link
-			rel="stylesheet"
-			id="theme"
-			onload="document.documentElement.style.display = ''"
-		/>
-		<script src="/resources/scripts/google-tag.js"></script>
-		<script src="/resources/scripts/main.js"></script>
-	</head>
-	<body>
-		<div class="ads-container">
-			<ins
-				class="adsbygoogle"
-				style="display: block"
-				data-ad-client="ca-pub-1132419379737567"
-				data-ad-slot="3280170072"
-				data-ad-format="auto"
-				data-full-width-responsive="true"
-			></ins>
-		</div>
-		<div class="launcher">
-			<span class="title-bar">MineXLauncher</span>
-			<div class="content">
-				<div class="sidebar">
-					<span class="username"></span>
-					<nav class="nav-bar">
-						<li onclick="navigate.updates()">
-							<img src="/resources/images/icons/nav/updates.webp" />
-							<span>Updates</span>
-						</li>
-						<li onclick="navigate.home.game()">
-							<img src="/resources/images/icons/nav/game.webp" />
-							<span>Game</span>
-						</li>
-						<li onclick="navigate.servers()">
-							<img src="/resources/images/icons/nav/servers.webp" />
-							<span>Server List</span>
-						</li>
-						<li onclick="navigate.addons.mods()">
-							<img src="/resources/images/icons/nav/mods.webp" />
-							<span>Mods</span>
-						</li>
-						<li class="selected" onclick="navigate.articles()">
-							<img src="/resources/images/icons/nav/articles.webp" />
-							<span>Tutorials</span>
-						</li>
-						<li onclick="navigate.settings.general()">
-							<img src="/resources/images/icons/nav/settings.webp" />
-							<span>Settings</span>
-						</li>
-					</nav>
-				</div>
-				<div class="main-panel">
-					<span class="top-title">Tutorials</span>
-					<div class="main-content">
-						<div class="article-list">
-							<div onclick="article.open('mc-server')">
-								<img
-									loading="lazy"
-									src="/resources/images/icons/articles/mc-server.webp"
-								/>
-								<div class="details">
-									<strong>How To Make An Eaglercraft Server</strong>
-									<p>
-										Have you ever wondered how to make an Eaglercraft Server?
-										Read this article to find out how!
-									</p>
-								</div>
-							</div>
-							<div onclick="article.open('cloudflare-tunnel')">
-								<img
-									loading="lazy"
-									src="/resources/images/icons/articles/cloudflare-tunnel.webp"
-								/>
-								<div class="details">
-									<strong
-										>Setting Up a Cloudflare Tunnel for an Eaglercraft
-										Server</strong
-									>
-									<p>
-										This brief guide walks you through configuring a Cloudflare
-										Tunnel for your Eaglercraft server.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="bottom-bar">
-				<span onclick="window.open('https://discord.gg/VRwbRJjXzt')"
-					>Join the MineXLauncher Discord</span
-				>
-				<span>© 2024 MineXLauncher. All rights reserved.</span>
-			</div>
-		</div>
-		<div class="ads-container">
-			<ins
-				class="adsbygoogle"
-				style="display: block"
-				data-ad-client="ca-pub-1132419379737567"
-				data-ad-slot="3280170072"
-				data-ad-format="auto"
-				data-full-width-responsive="true"
-			></ins>
-		</div>
-		<div class="article" data-article-id="mc-server">
-			<div>
-				<span onclick="article.close('mc-server')">&times;</span>
-				<div>
-					<h1>How To Make An Eaglercraft Server</h1>
-					<p>
-						ServerDotSo has requested for this content to be removed.<br />Read
-						their tutorial here instead:
-						<a
-							href="https://eaglercraft.dev/articles/how-to-make-an-eaglercraft-server/"
-							>https://eaglercraft.dev/articles/how-to-make-an-eaglercraft-server/</a
-						>
-						<br /><br />
-						Don't worry, a new tutorial is coming in the next update!
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="article" data-article-id="cloudflare-tunnel">
-			<div>
-				<span onclick="article.close('cloudflare-tunnel')">&times;</span>
-				<div>
-					<h1>Setting Up a Cloudflare Tunnel for an Eaglercraft Server</h1>
-					<h5>Written by zumbiepig and SpeedSlicer</h5>
-					<p>
-						In this guide, we'll walk you through the steps to set up a
-						Cloudflare Tunnel for your Eaglercraft server, which is running on
-						<code>ws://localhost:8081</code>.
-					</p>
-					<h3>Prerequisites</h3>
-					<ul>
-						<li>
-							An Eaglercraft server running on <code>ws://localhost:8081</code>
-						</li>
-						<li>
-							Access to the computer your Eaglercraft server is running on
-						</li>
-						<li>A domain already linked to Cloudflare</li>
-					</ul>
-					<h3>Step 1: Access Cloudflare Tunnels</h3>
-					<ol>
-						<li>
-							Go to the
-							<a href="https://dash.cloudflare.com/" target="_blank"
-								>Dashboard</a
-							>
-							and log in to your Cloudflare account.
-						</li>
-						<li>
-							Navigate to the <strong>Zero Trust</strong> page using the
-							navigation bar on the left.
-						</li>
-						<li>
-							Sign up for Cloudflare Zero Trust with the Free Plan if you have
-							not already.
-						</li>
-						<li>
-							Once you are in the dashboard, navigate to
-							<strong>Networks</strong> > <strong>Tunnels</strong>.
-						</li>
-					</ol>
-					<h3>Step 2: Create a Tunnel</h3>
-					<ol>
-						<li>
-							Click on <strong>Create a tunnel</strong>, and select
-							<strong>Cloudflared</strong>.
-						</li>
-						<li>Click <strong>Next</strong>.</li>
-						<li>Enter a name for the tunnel.</li>
-						<li>
-							Follow the instructions provided on the site to install the
-							tunnel.<br />You should do these instructions on the computer that
-							your Eaglercraft server is running on.
-						</li>
-					</ol>
-					<h3>Step 3: Configure Domain/Subdomain</h3>
-					<ol>
-						<li>
-							Select the domain or subdomain you want to use for your server.
-						</li>
-						<li>Select <strong>HTTP</strong> for the type.</li>
-						<li>
-							Enter <code>localhost:8081</code> (or whatever port your server is
-							running on) as the URL.
-						</li>
-					</ol>
-					<h3>Step 4: Activate Tunnel and Proxy</h3>
-					<ol>
-						<li>Start your Eaglercraft server.</li>
-						<li>
-							In Eaglercraft, connect to the domain or subdomain you set up.
-						</li>
-						<li>
-							You're all set! Players can now join your server using the domain
-							that you linked your tunnel to.<br />Example:
-							<code>wss://example.com</code>
-						</li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MineXLauncher</title>
+      <link
+      rel="icon"
+      type="image/webp"
+      href="/resources/images/icons/favicon.webp"
+      />
+      <link rel="stylesheet" href="/resources/styles/themes/default.css" />
+      <link
+      rel="stylesheet"
+      id="theme"
+      onload="document.documentElement.style.display = ''"
+      />
+      <script src="/resources/scripts/google-tag.js">
+    </script>
+    <script src="/resources/scripts/main.js">
+  </script>
+</head>
+<body>
+  <div class="ads-container">
+    <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="ca-pub-1132419379737567"
+    data-ad-slot="3280170072"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+    >
+  </ins>
+</div>
+<div class="launcher">
+  <span class="title-bar">MineXLauncher</span>
+    <div class="content">
+      <div class="sidebar">
+        <span class="username">
+        </span>
+        <nav class="nav-bar">
+          <li onclick="navigate.updates()">
+            <img src="/resources/images/icons/nav/updates.webp" />
+            <span>Updates</span>
+            </li>
+            <li onclick="navigate.home.game()">
+              <img src="/resources/images/icons/nav/game.webp" />
+              <span>Game</span>
+              </li>
+              <li onclick="navigate.servers()">
+                <img src="/resources/images/icons/nav/servers.webp" />
+                <span>Server List</span>
+                </li>
+                <li onclick="navigate.addons.mods()">
+                  <img src="/resources/images/icons/nav/mods.webp" />
+                  <span>Mods</span>
+                  </li>
+                  <li class="selected" onclick="navigate.articles()">
+                    <img src="/resources/images/icons/nav/articles.webp" />
+                    <span>Tutorials</span>
+                    </li>
+                    <li onclick="navigate.settings.general()">
+                      <img src="/resources/images/icons/nav/settings.webp" />
+                      <span>Settings</span>
+                      </li>
+                    </nav>
+                  </div>
+                  <div class="main-panel">
+                    <span class="top-title">Tutorials</span>
+                      <div class="main-content">
+                        <div class="article-list">
+                          <div onclick="article.open('mc-server')">
+                            <img
+                            loading="lazy"
+                            src="/resources/images/icons/articles/mc-server.webp"
+                            />
+                            <div class="details">
+                              <strong>How To Make An Eaglercraft Server</strong>
+                                <p>
+                                Have you ever wondered how to make an Eaglercraft Server?
+                                Read this article to find out how!
+                              </p>
+                            </div>
+                          </div>
+                          <div onclick="article.open('cloudflare-tunnel')">
+                            <img
+                            loading="lazy"
+                            src="/resources/images/icons/articles/cloudflare-tunnel.webp"
+                            />
+                            <div class="details">
+                              <strong
+                              >Setting Up a Cloudflare Tunnel for an Eaglercraft
+                              Server</strong
+                              >
+                              <p>
+                              This brief guide walks you through configuring a Cloudflare
+                              Tunnel for your Eaglercraft server.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-bar">
+                  <span onclick="window.open('https://discord.gg/VRwbRJjXzt')"
+                  >Join the MineXLauncher Discord</span
+                  >
+                  <span>© 2024 MineXLauncher. All rights reserved.</span>
+                  </div>
+                </div>
+                <div class="ads-container">
+                  <ins
+                  class="adsbygoogle"
+                  style="display: block"
+                  data-ad-client="ca-pub-1132419379737567"
+                  data-ad-slot="3280170072"
+                  data-ad-format="auto"
+                  data-full-width-responsive="true"
+                  >
+                </ins>
+              </div>
+              <div class="article" data-article-id="mc-server">
+                <div>
+                  <span onclick="article.close('mc-server')">&times;</span>
+                    <div>
+                      <h1>How To Make An Eaglercraft Server</h1>
+                        <p>
+                        ServerDotSo has requested for this content to be removed.<br />Read
+                        their tutorial here instead:
+                        <a
+                        href="https://eaglercraft.dev/articles/how-to-make-an-eaglercraft-server/"
+                        >https://eaglercraft.dev/articles/how-to-make-an-eaglercraft-server/</a
+                        >
+                        <br />
+                        <br />
+                        Don't worry, a new tutorial is coming in the next update!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="article" data-article-id="cloudflare-tunnel">
+                  <div>
+                    <span onclick="article.close('cloudflare-tunnel')">&times;</span>
+                      <div>
+                        <h1>Setting Up a Cloudflare Tunnel for an Eaglercraft Server</h1>
+                          <h5>Written by zumbiepig and SpeedSlicer</h5>
+                            <p>
+                            In this guide, we'll walk you through the steps to set up a
+                            Cloudflare Tunnel for your Eaglercraft server, which is running on
+                            <code>ws://localhost:8081</code>.
+                            </p>
+                            <h3>Prerequisites</h3>
+                              <ul>
+                                <li>
+                                  An Eaglercraft server running on <code>ws://localhost:8081</code>
+                                </li>
+                                <li>
+                                  Access to the computer your Eaglercraft server is running on
+                                </li>
+                                <li>A domain already linked to Cloudflare</li>
+                                </ul>
+                                <h3>Step 1: Access Cloudflare Tunnels</h3>
+                                  <ol>
+                                    <li>
+                                      Go to the
+                                      <a href="https://dash.cloudflare.com/" target="_blank"
+                                      >Dashboard</a
+                                      >
+                                      and log in to your Cloudflare account.
+                                    </li>
+                                    <li>
+                                      Navigate to the <strong>Zero Trust</strong> page using the
+                                      navigation bar on the left.
+                                    </li>
+                                    <li>
+                                      Sign up for Cloudflare Zero Trust with the Free Plan if you have
+                                      not already.
+                                    </li>
+                                    <li>
+                                      Once you are in the dashboard, navigate to
+                                      <strong>Networks</strong> >
+                                        <strong>Tunnels</strong>.
+                                        </li>
+                                      </ol>
+                                      <h3>Step 2: Create a Tunnel</h3>
+                                        <ol>
+                                          <li>
+                                            Click on <strong>Create a tunnel</strong>, and select
+                                            <strong>Cloudflared</strong>.
+                                            </li>
+                                            <li>Click <strong>Next</strong>.</li>
+                                              <li>Enter a name for the tunnel.</li>
+                                                <li>
+                                                  Follow the instructions provided on the site to install the
+                                                  tunnel.<br />You should do these instructions on the computer that
+                                                  your Eaglercraft server is running on.
+                                                </li>
+                                              </ol>
+                                              <h3>Step 3: Configure Domain/Subdomain</h3>
+                                                <ol>
+                                                  <li>
+                                                    Select the domain or subdomain you want to use for your server.
+                                                  </li>
+                                                  <li>Select <strong>HTTP</strong> for the type.</li>
+                                                    <li>
+                                                      Enter <code>localhost:8081</code> (or whatever port your server is
+                                                      running on) as the URL.
+                                                    </li>
+                                                  </ol>
+                                                  <h3>Step 4: Activate Tunnel and Proxy</h3>
+                                                    <ol>
+                                                      <li>Start your Eaglercraft server.</li>
+                                                        <li>
+                                                          In Eaglercraft, connect to the domain or subdomain you set up.
+                                                        </li>
+                                                        <li>
+                                                          You're all set! Players can now join your server using the domain
+                                                          that you linked your tunnel to.<br />Example:
+                                                          <code>wss://example.com</code>
+                                                          </li>
+                                                        </ol>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </body>
+                                              </html>

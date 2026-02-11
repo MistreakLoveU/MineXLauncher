@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-		<title>Eaglercraft a1.2.6</title>
-		<link rel="icon" type="image/webp" href="/resources/images/icons/clients/eagler.webp" />
-		<link rel="stylesheet" href="/resources/styles/eagler.css" />
-		<script src="/resources/scripts/google-tag.js"></script>
-		<script src="/game/web/main/a1.2.6/js/app.js"></script>
-		<script>
-			window.addEventListener('load', function () {
-				window.config = {
-					gameContainer: 'game_frame',
-					assetsLocation: '/game/web/main/a1.2.6/resources.mc',
-				};
-				main();
-			});
-
-			document.esc = false;
-			document.addEventListener('keydown', function (e) {
-				if (e.key === 'Escape') {
-					e.preventDefault();
-					document.esc = true;
-				}
-			});
-
-			document.addEventListener('keyup', function (e) {
-				if (e.key === 'Escape') {
-					e.preventDefault();
-					document.esc = false;
-				}
-			});
-		</script>
-	</head>
-	<body id="game_frame"></body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Eaglercraft a1.2.6</title>
+      <link rel="icon" type="image/webp" href="/resources/images/icons/clients/eagler.webp" />
+      <link rel="stylesheet" href="/resources/styles/eagler.css" />
+      <script src="/resources/scripts/google-tag.js">
+    </script>
+    <script src="/game/web/main/a1.2.6/js/app.js">
+  </script>
+  <script>
+  window.addEventListener('load', function () {
+  window.config = {
+  gameContainer: 'game_frame',
+  assetsLocation: '/game/web/main/a1.2.6/resources.mc',
+  };
+  main();
+  });
+  document.esc = false;
+  document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+  e.preventDefault();
+  document.esc = true;
+  }
+  });
+  document.addEventListener('keyup', function (e) {
+  if (e.key === 'Escape') {
+  e.preventDefault();
+  document.esc = false;
+  }
+  });
+</script>
+</head>
+<body id="game_frame">
+</body>
 </html>
