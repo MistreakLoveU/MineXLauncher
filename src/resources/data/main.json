@@ -43,6 +43,15 @@
 	],
 	"updates": [
 		{
+			"version": "2.0.0",
+			"changelog": [
+				"Major launcher overhaul!",
+				"Updated client versions",
+				"Changed footer design",
+				"MineXLauncher is now owned and maintained by Mistreak"
+			]
+		},
+		{
 			"version": "1.7.2",
 			"changelog": [
 				"Added Starlike Client",
