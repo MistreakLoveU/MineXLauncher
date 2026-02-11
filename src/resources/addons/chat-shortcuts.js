@@ -1,37 +1,72 @@
 ModAPI.require("player");
-ModAPI.addEventListener("sendchatmessage", function (event) {
-  event.message = `${event.message}`
-    .replaceAll("{health}", ModAPI.player.getHealth() / 2 + "❤")
+
+ModAPI.addEventListener("sendchatmessage",
+ function (event) {
+
+  event.message = `${
+event.message
+}`
+    .replaceAll("{
+health
+}",
+ ModAPI.player.getHealth() / 2 + "❤")
     .replaceAll(
-      "{pos}",
+      "{
+pos
+}",
+
       Math.floor(ModAPI.player.x) +
         " " +
         Math.floor(ModAPI.player.y) +
         " " +
         Math.floor(ModAPI.player.z)
     ).replaceAll(
-      "{name}",
+      "{
+name
+}",
+
       ModAPI.player.getDisplayName()
     ).replaceAll(
-      "{me}",
+      "{
+me
+}",
+
       ModAPI.player.getDisplayName()
     ).replaceAll(
-      "{x}",
+      "{
+x
+}",
+
       Math.floor(ModAPI.player.x)
     ).replaceAll(
-      "{y}",
+      "{
+y
+}",
+
       Math.floor(ModAPI.player.y)
     ).replaceAll(
-      "{z}",
+      "{
+z
+}",
+
       Math.floor(ModAPI.player.z)
     ).replaceAll(
-      "{level}",
+      "{
+level
+}",
+
       ModAPI.player.experienceLevel
     ).replaceAll(
-      "{walked}",
+      "{
+walked
+}",
+
       Math.floor(ModAPI.player.movedDistance)
     ).replaceAll(
-      "{chunk}",
+      "{
+chunk
+}",
+
       Math.floor(ModAPI.player.chunkCoordX) +
         " " +
         Math.floor(ModAPI.player.chunkCoordY) +
@@ -39,6 +74,10 @@ ModAPI.addEventListener("sendchatmessage", function (event) {
         Math.floor(ModAPI.player.chunkCoordZ)
     ).replaceAll(
       "\\n",
+
       "\n"
     );
+
+
 });
+

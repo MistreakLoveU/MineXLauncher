@@ -10,6 +10,9 @@ export default tseslint.config(
 	...tseslint.configs.stylisticTypeChecked,
 	eslintConfigPrettier,
 	{
+		ignores: ['tools/**'],
+	},
+	{
 		/* plugins: {
 			tsdoc: tsdocPlugin,
 		}, */

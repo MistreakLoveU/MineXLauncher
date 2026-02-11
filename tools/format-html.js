@@ -1,9 +1,20 @@
 #!/usr/bin/env node
 import { promises as fs } from 'fs';
-import { join, extname, basename } from 'path';
+import { join, extname } from 'path';
 
-const IGNORED = new Set(['node_modules', '.git', 'dist', 'build', 'public/sw.js', 'public/sw-full.js']);
+const IGNORED = new Set([
+	'node_modules',
+	'.git',
+	'dist',
+	'build',
+	'public/sw.js',
+	'public/sw-full.js',
+]);
 
+/**
+ * @param {string} dir
+ * @returns {Promise<string[]>}
+ */
 async function getFiles(dir) {
 	const entries = await fs.readdir(dir, { withFileTypes: true });
 	const files = [];
@@ -16,10 +27,17 @@ async function getFiles(dir) {
 	return files;
 }
 
+/**
+ * @param {string} src
+ * @returns {string}
+ */
 function formatHtml(src) {
 	// break tags onto separate lines
-	let out = src.replace(/>\s*</g, ">\n<");
-	const lines = out.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+	let out = src.replace(/>\s*</g, '>\n<');
+	const lines = out
+		.split(/\r?\n/)
+		.map((l) => l.trim())
+		.filter(Boolean);
 	let indent = 0;
 	const res = [];
 	for (const line of lines) {
@@ -40,7 +58,14 @@ function formatHtml(src) {
 			continue;
 		}
 		// if opening tag that is not self-closing and not a closing tag, increase indent
-		if (/^<[^\/!][^>]*[^\/]>/.test(line) && !/^<meta\b/.test(lower) && !/^<link\b/.test(lower) && !/^<br\b/.test(lower) && !/^<hr\b/.test(lower) && !/^<input\b/.test(lower)) {
+		if (
+			/^<[^\/!][^>]*[^\/]>/.test(line) &&
+			!/^<meta\b/.test(lower) &&
+			!/^<link\b/.test(lower) &&
+			!/^<br\b/.test(lower) &&
+			!/^<hr\b/.test(lower) &&
+			!/^<input\b/.test(lower)
+		) {
 			// if tag closes on same line like <div></div>, don't increment
 			if (!/<[^>]+><\/[^>]+>/.test(line)) indent += 1;
 		}
@@ -63,7 +88,7 @@ function formatHtml(src) {
 				changed++;
 			}
 		} catch (err) {
-			console.error('Error:', file, err.message);
+			console.error('Error:', file, err instanceof Error ? err.message : String(err));
 		}
 	}
 	console.log(`Done. Formatted ${changed} HTML file(s).`);
