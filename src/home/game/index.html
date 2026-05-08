@@ -1,100 +1,27 @@
-<!doctype html>
-<html lang="en" style="display: none">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MineXLauncher</title>
-  <link rel="icon" type="image/webp" href="/resources/images/icons/favicon.webp" />
-  <link rel="stylesheet" href="/resources/styles/themes/default.css" />
-  <link rel="stylesheet" id="theme" onload="document.documentElement.style.display = ''" />
-  <script src="/resources/scripts/google-tag.js"></script>
-  <script src="/resources/scripts/main.js"></script>
-</head>
-<body>
-  <div class="ads-container">
-    <ins class="adsbygoogle" 
-         style="display: block" 
-         data-ad-client="ca-pub-1132419379737567" 
-         data-ad-slot="3280170072" 
-         data-ad-format="auto" 
-         data-full-width-responsive="true">
-    </ins>
+<div class="main-panel">
+  <div class="top-nav">
+    <ul>
+      <li class="selected" onclick="navigate.home.game()">Game</li>
+      <li onclick="navigate.home.clients()">Clients</li>
+      <li onclick="navigate.home.archive()">Archive</li>
+      <li onclick="navigate.home.downloads()">Offline Downloads</li>
+    </ul>
   </div>
 
-  <div class="launcher">
-    <span class="title-bar">MineXLauncher</span>
-    <div class="content">
-      <div class="sidebar">
-        <span class="username"></span>
-        <nav class="nav-bar">
-          <li onclick="navigate.updates()">
-            <img src="/resources/images/icons/nav/updates.webp" />
-            <span>Updates</span>
-          </li>
-          <li class="selected" onclick="navigate.home.game()">
-            <img src="/resources/images/icons/nav/game.webp" />
-            <span>Game</span>
-          </li>
-          <li onclick="navigate.servers()">
-            <img src="/resources/images/icons/nav/servers.webp" />
-            <span>Server List</span>
-          </li>
-          <li onclick="navigate.addons.mods()">
-            <img src="/resources/images/icons/nav/mods.webp" />
-            <span>Mods</span>
-          </li>
-          <li onclick="navigate.articles()">
-            <img src="/resources/images/icons/nav/articles.webp" />
-            <span>Tutorials</span>
-          </li>
-          <li onclick="navigate.settings.general()">
-            <img src="/resources/images/icons/nav/settings.webp" />
-            <span>Settings</span>
-          </li>
-        </nav>
-      </div>
+  <div class="main-content">
+    <img class="cover-image" src="/resources/images/covers/minecraft.webp" />
+  </div>
 
-      <div class="main-panel">
-        <div class="top-nav">
-          <ul>
-            <li class="selected" onclick="navigate.home.game()">Game</li>
-            <li onclick="navigate.home.clients()">Clients</li>
-            <li onclick="navigate.home.archive()">Archive</li>
-            <li onclick="navigate.home.downloads()">Offline Downloads</li>
-          </ul>
+  <div class="action-bar">
+    <div class="installations">
+      <span class="selector" onclick="versionSelector.toggle()">Select a version</span>
+      <div class="options">
+        <div onclick="game.select('/games/clients/tuffwasm1122/tuffwasm1122.html', 'Tuff WASM 1.12.2')">
+          <img src="/resources/images/icons/clients/eagler.webp" />
+          <span>Tuff WASM 1.12.2</span>
         </div>
-        <div class="main-content">
-          <img class="cover-image" src="/resources/images/covers/minecraft.webp" />
-        </div>
-        <div class="installations">
-          <div>
-            <span class="selector" onclick="versionSelector.toggle()">Select a version</span>
-            <div class="options">
-              <div onclick="game.select('/games/clients/tuffwasm1122/tuffwasm1122.html', 'Tuff WASM 1.12.2')">
-                <img src="/resources/images/icons/clients/eagler.webp" />
-                <span>Tuff WASM 1.12.2</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button onclick="game.play()">Play</button>
       </div>
     </div>
-    
-    <div class="bottom-bar">
-      <span onclick="window.open('https://discord.gg/VRwbRJjXzt')">Join the MineXLauncher Discord</span>
-      <span>© 2026 MineXLauncher. All rights reserved. Rebuilt by Mistreak</span>
-    </div>
+    <button class="play-button" onclick="game.play()">Play</button>
   </div>
-
-  <div class="ads-container">
-    <ins class="adsbygoogle" 
-         style="display: block" 
-         data-ad-client="ca-pub-1132419379737567" 
-         data-ad-slot="3280170072" 
-         data-ad-format="auto" 
-         data-full-width-responsive="true">
-    </ins>
-  </div>
-</body>
-</html>
+</div>
