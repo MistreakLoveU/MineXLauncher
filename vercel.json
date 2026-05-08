@@ -8,18 +8,18 @@
       }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/games/(.*)/game\\.html",
-      "dest": "/game/$1/"
+      "source": "/games/:path*/game.html",
+      "destination": "/game/:path*/index.html"
     },
     {
-      "src": "/games/(.*)/offline\\.html",
-      "dest": "/game/$1/offline.html"
+      "source": "/games/:path*/offline.html",
+      "destination": "/game/:path*/offline.html"
     },
     {
-      "src": "/games/(.*)",
-      "dest": "/game/$1"
+      "source": "/games/:path*",
+      "destination": "/game/:path*"
     }
   ]
 }
