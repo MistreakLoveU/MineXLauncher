@@ -43,6 +43,13 @@
 	],
 	"updates": [
 		{
+			"version": "2.1.1",
+			"changelog": [
+				"Added DragonX2 client",
+				"Added changelog for 2.1.0"
+			]
+		},
+		{
 			"version": "2.1.0",
 			"changelog": [
 				"Removed all client versions",
