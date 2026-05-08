@@ -1,0 +1,25 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/games/(.*)/game\.html",
+      "dest": "/game/$1/"
+    },
+    {
+      "src": "/games/(.*)/offline\.html",
+      "dest": "/game/$1/offline.html"
+    },
+    {
+      "src": "/games/(.*)",
+      "dest": "/game/$1"
+    }
+  ]
+}

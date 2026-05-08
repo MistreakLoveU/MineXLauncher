@@ -8,6 +8,7 @@
 		"lint": "eslint ./src/resources/scripts/ && tsc",
 		"lint:fix": "eslint --fix ./src/resources/scripts/ && tsc",
 		"build": "NODE_ENV=production bun run ./build.ts",
+		"vercel-build": "bun run build",
 		"format": "prettier --write --list-different .",
 		"format:check": "prettier --check .",
 		"proxy": "bun run ./proxy.ts",
