@@ -43,6 +43,14 @@
 	],
 	"updates": [
 		{
+			"version": "2.1.0",
+			"changelog": [
+				"Removed all client versions",
+				"Added Tuff WASM 1.12.2",
+				"Fixed black screen when launching clients"
+			]
+		},
+		{
 			"version": "2.0.0",
 			"changelog": [
 				"Major launcher overhaul!",
