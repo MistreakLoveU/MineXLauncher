@@ -10,11 +10,11 @@
   ],
   "routes": [
     {
-      "src": "/games/(.*)/game\.html",
+      "src": "/games/(.*)/game\\.html",
       "dest": "/game/$1/"
     },
     {
-      "src": "/games/(.*)/offline\.html",
+      "src": "/games/(.*)/offline\\.html",
       "dest": "/game/$1/offline.html"
     },
     {
