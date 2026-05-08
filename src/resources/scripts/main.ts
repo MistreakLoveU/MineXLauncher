@@ -3,6 +3,10 @@ import { gt, coerce } from 'semver';
 import { inflate, deflate } from 'pako';
 // @ts-expect-error
 import idbExportImport from 'indexeddb-export-import';
+import { inject } from '@vercel/analytics';
+
+// Initialize Vercel Web Analytics
+inject();
 
 declare global {
 	interface Window {
