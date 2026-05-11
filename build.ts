@@ -35,17 +35,38 @@ const srcFiles = getFiles(resolve(import.meta.dir, 'src'));
 const bundleFiles: string[] = [];
 const minifyFiles: string[] = [];
 const copyFiles: string[] = [];
+const maxMinifySize = 10 * 1024 * 1024; // 10 MB
 srcFiles.forEach((file) => {
 	const strippedPath = file.replace(new RegExp(`^${srcDir}`), '');
-	if (file.endsWith('.ts')) bundleFiles.push(file);
-	else if (
+	if (file.endsWith('.ts')) {
+		bundleFiles.push(file);
+	} else if (
 		/\.(?:html|css|js|json)$/.test(strippedPath) &&
 		!/^\/game\/.*(?:\/offline\.html|\/classes\.js)$/.test(strippedPath)
-	)
-		minifyFiles.push(file);
-	else copyFiles.push(file);
+	) {
+		const fileSize = statSync(file).size;
+		if (fileSize > maxMinifySize) {
+			copyFiles.push(file);
+			console.log(
+				chalk.yellow(
+					`Skipping minification for large file: ${strippedPath} (${(
+						fileSize / 1024 / 1024
+					).toFixed(1)} MB)`,
+				),
+			);
+		} else {
+			minifyFiles.push(file);
+		}
+	} else {
+		copyFiles.push(file);
+	}
 });
 
+console.log(
+	chalk.cyan(
+		`Build plan: ${bundleFiles.length} TS files, ${minifyFiles.length} minify candidates, ${copyFiles.length} copy-only files.\n`,
+	),
+);
 console.log(chalk.cyan('Removing old build artifacts...\n'));
 rmSync(publicDir, { force: true, recursive: true });
 
