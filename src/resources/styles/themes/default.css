@@ -85,6 +85,8 @@ body {
 	align-items: center;
 	padding: 15px 20px;
 	cursor: pointer;
+	position: relative;
+	z-index: 2;
 	transition: background-color 0.2s;
 }
 
@@ -146,6 +148,8 @@ body {
 	cursor: pointer;
 	font-size: 16px;
 	color: #ccc;
+	position: relative;
+	z-index: 2;
 	transition: color 0.2s;
 }
 
@@ -251,6 +255,8 @@ body {
 	cursor: pointer;
 	box-shadow: 4px 4px #4e4e50;
 	user-select: none;
+	position: relative;
+	z-index: 3;
 	transition: box-shadow 0.3s;
 }
 
@@ -278,6 +284,7 @@ body {
 	scrollbar-color: #048239 #035525;
 	max-height: 0;
 	overflow: auto;
+	z-index: 5;
 	transition:
 		max-height 0.3s ease-out,
 		padding 0.3s ease-out,
@@ -296,6 +303,8 @@ body {
 	align-items: center;
 	padding: 10px;
 	cursor: pointer;
+	position: relative;
+	z-index: 4;
 	border-bottom: 1px solid #000;
 	transition: background-color 0.3s;
 }
