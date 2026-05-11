@@ -699,7 +699,7 @@ if (window.location.pathname === '/') {
 		? '/welcome/'
 		: lastPage
 			? lastPage
-			: '/home/game/';
+			: '/game/';
 
 	document.addEventListener('DOMContentLoaded', () => {
 		document.body.append(iframe);
@@ -1032,8 +1032,8 @@ if (window.location.pathname === '/settings/general/') {
 		});
 	});
 } else if (
-	window.location.pathname === '/home/game/' ||
-	window.location.pathname === '/home/clients/'
+	window.location.pathname === '/game/' ||
+	window.location.pathname === '/clients/'
 ) {
 	const lastGame = storage.session.get('lastGame');
 	if (lastGame) game.select(lastGame);
