@@ -43,6 +43,13 @@
 	],
 	"updates": [
 		{
+			"version": "2.3",
+			"changelog": [
+				"Added EaglerForge client",
+				"Removed Announcements section"
+			]
+		},
+		{
 			"version": "2.2",
 			"changelog": [
 				"Added Announcements section",
