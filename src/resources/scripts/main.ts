@@ -255,6 +255,18 @@ const navigate = {
 			storage.session.set('lastPage', navUrl);
 			window.location.href = navUrl;
 		},
+		announcements: function () {
+			document.body.style.display = 'none';
+			const navUrl = '/home/announcements/';
+			storage.session.set('lastPage', navUrl);
+			window.location.href = navUrl;
+		},
+		hackedClients: function () {
+			document.body.style.display = 'none';
+			const navUrl = '/home/hacked-clients/';
+			storage.session.set('lastPage', navUrl);
+			window.location.href = navUrl;
+		},
 		archive: function () {
 			document.body.style.display = 'none';
 			const navUrl = '/home/archive/';

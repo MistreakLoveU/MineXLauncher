@@ -43,6 +43,15 @@
 	],
 	"updates": [
 		{
+			"version": "2.2",
+			"changelog": [
+				"Added Announcements section",
+				"Added Hacked Clients section",
+				"Added DragonX2",
+				"Added WurstX"
+			]
+		},
+		{
 			"version": "2.1.2",
 			"changelog": [
 				"Removed DragonX2 client"
