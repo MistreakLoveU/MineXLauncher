@@ -9,6 +9,10 @@
       type="image/webp"
       href="/resources/images/icons/favicon.webp"
       />
+      <link rel="prefetch" href="/home/game/" as="document" />
+      <link rel="prefetch" href="/home/clients/" as="document" />
+      <link rel="prefetch" href="/home/downloads/" as="document" />
+      <link rel="prefetch" href="/home/hacked-clients/" as="document" />
       <link rel="stylesheet" href="/resources/styles/themes/default.css" />
       <link
       rel="stylesheet"
@@ -40,11 +44,15 @@
         </span>
         <nav class="nav-bar">
           <li onclick="navigate.updates()">
-            <img src="/resources/images/icons/nav/updates.webp" />
+            <img src="/resources/images/icons/nav/updates.webp" decoding="async" />
             <span>Updates</span>
             </li>
+            <li onclick="navigate.home.hackedClients()">
+              <img src="/resources/images/icons/nav/clients.webp" decoding="async" />
+              <span>Hacked Clients</span>
+              </li>
             <li class="selected" onclick="navigate.home.game()">
-              <img src="/resources/images/icons/nav/game.webp" />
+              <img src="/resources/images/icons/nav/game.webp" decoding="async" />
               <span>Game</span>
               </li>
               <li onclick="navigate.servers()">
