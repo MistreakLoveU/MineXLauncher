@@ -244,37 +244,31 @@ const game = {
 const navigate = {
 	home: {
 		game: function () {
-			document.body.style.display = 'none';
+			document.body.classList.add('loading');
 			const navUrl = '/home/game/';
 			storage.session.set('lastPage', navUrl);
 			window.location.href = navUrl;
 		},
 		clients: function () {
-			document.body.style.display = 'none';
+			document.body.classList.add('loading');
 			const navUrl = '/home/clients/';
 			storage.session.set('lastPage', navUrl);
 			window.location.href = navUrl;
 		},
-		announcements: function () {
-			document.body.style.display = 'none';
-			const navUrl = '/home/announcements/';
-			storage.session.set('lastPage', navUrl);
-			window.location.href = navUrl;
-		},
 		hackedClients: function () {
-			document.body.style.display = 'none';
+			document.body.classList.add('loading');
 			const navUrl = '/home/hacked-clients/';
 			storage.session.set('lastPage', navUrl);
 			window.location.href = navUrl;
 		},
 		archive: function () {
-			document.body.style.display = 'none';
+			document.body.classList.add('loading');
 			const navUrl = '/home/archive/';
 			storage.session.set('lastPage', navUrl);
 			window.location.href = navUrl;
 		},
 		downloads: function () {
-			document.body.style.display = 'none';
+			document.body.classList.add('loading');
 			const navUrl = '/home/downloads/';
 			storage.session.set('lastPage', navUrl);
 			window.location.href = navUrl;
@@ -282,13 +276,13 @@ const navigate = {
 	},
 	addons: {
 		mods: function () {
-			document.body.style.display = 'none';
+			document.body.classList.add('loading');
 			const navUrl = '/addons/mods/';
 			storage.session.set('lastPage', navUrl);
 			window.location.href = navUrl;
 		},
 		resourcepacks: function () {
-			document.body.style.display = 'none';
+			document.body.classList.add('loading');
 			const navUrl = '/addons/resourcepacks/';
 			storage.session.set('lastPage', navUrl);
 			window.location.href = navUrl;
