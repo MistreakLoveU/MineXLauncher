@@ -9,6 +9,7 @@
       type="image/webp"
       href="/resources/images/icons/favicon.webp"
       />
+      <link rel="preload" href="/resources/images/covers/clients.webp" as="image" />
       <link rel="stylesheet" href="/resources/styles/themes/default.css" />
       <link
       rel="stylesheet"
@@ -40,31 +41,31 @@
         </span>
         <nav class="nav-bar">
           <li onclick="navigate.updates()">
-            <img src="/resources/images/icons/nav/updates.webp" />
+            <img src="/resources/images/icons/nav/updates.webp" decoding="async" />
             <span>Updates</span>
             </li>
             <li onclick="navigate.home.hackedClients()">
-              <img src="/resources/images/icons/nav/clients.webp" />
+              <img src="/resources/images/icons/nav/clients.webp" decoding="async" />
               <span>Hacked Clients</span>
               </li>
             <li class="selected" onclick="navigate.home.game()">
-              <img src="/resources/images/icons/nav/game.webp" />
+              <img src="/resources/images/icons/nav/game.webp" decoding="async" />
               <span>Game</span>
               </li>
               <li onclick="navigate.servers()">
-                <img src="/resources/images/icons/nav/servers.webp" />
+                <img src="/resources/images/icons/nav/servers.webp" decoding="async" />
                 <span>Server List</span>
                 </li>
                 <li onclick="navigate.addons.mods()">
-                  <img src="/resources/images/icons/nav/mods.webp" />
+                  <img src="/resources/images/icons/nav/mods.webp" decoding="async" />
                   <span>Mods</span>
                   </li>
                   <li onclick="navigate.articles()">
-                    <img src="/resources/images/icons/nav/articles.webp" />
+                    <img src="/resources/images/icons/nav/articles.webp" decoding="async" />
                     <span>Tutorials</span>
                     </li>
                     <li onclick="navigate.settings.general()">
-                      <img src="/resources/images/icons/nav/settings.webp" />
+                      <img src="/resources/images/icons/nav/settings.webp" decoding="async" />
                       <span>Settings</span>
                       </li>
                     </nav>
@@ -82,6 +83,8 @@
                             <img
                             class="cover-image"
                             src="/resources/images/covers/clients.webp"
+                            decoding="async"
+                            fetchpriority="high"
                             />
                           </div>
                           <div class="installations">
@@ -93,13 +96,13 @@
                                 <div
                                 onclick="game.select('/games/clients/tuffwasm1122/tuffwasm1122.html', 'Tuff WASM 1.12.2')"
                                 >
-                                <img src="/resources/images/icons/clients/eagler.webp" />
+                                <img src="/resources/images/icons/clients/eagler.webp" decoding="async" />
                                 <span>Tuff WASM 1.12.2</span>
                                 </div>
                                 <div
                                 onclick="game.select('/games/clients/eaglerforge/eaglerforge.html', 'EaglerForge')"
                                 >
-                                <img src="/resources/images/icons/clients/eagler.webp" />
+                                <img src="/resources/images/icons/clients/eagler.webp" decoding="async" />
                                 <span>EaglerForge</span>
                                 </div>
                               </div>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MineXLauncher - Hacked Clients</title>
     <link rel="icon" type="image/webp" href="/resources/images/icons/favicon.webp" />
+    <link rel="preload" href="/resources/images/covers/clients.webp" as="image" />
     <link rel="stylesheet" href="/resources/styles/themes/default.css" />
     <link rel="stylesheet" id="theme" onload="document.documentElement.style.display = ''" />
     <script src="/resources/scripts/google-tag.js"></script>
@@ -20,13 +21,13 @@
         <div class="sidebar">
           <span class="username"></span>
           <nav class="nav-bar">
-            <li onclick="navigate.updates()"><img src="/resources/images/icons/nav/updates.webp" /><span>Updates</span></li>
-            <li class="selected" onclick="navigate.home.hackedClients()"><img src="/resources/images/icons/nav/clients.webp" /><span>Hacked Clients</span></li>
-            <li onclick="navigate.home.game()"><img src="/resources/images/icons/nav/game.webp" /><span>Game</span></li>
-            <li onclick="navigate.servers()"><img src="/resources/images/icons/nav/servers.webp" /><span>Server List</span></li>
-            <li onclick="navigate.addons.mods()"><img src="/resources/images/icons/nav/mods.webp" /><span>Mods</span></li>
-            <li onclick="navigate.articles()"><img src="/resources/images/icons/nav/articles.webp" /><span>Tutorials</span></li>
-            <li onclick="navigate.settings.general()"><img src="/resources/images/icons/nav/settings.webp" /><span>Settings</span></li>
+            <li onclick="navigate.updates()"><img src="/resources/images/icons/nav/updates.webp" decoding="async" /><span>Updates</span></li>
+            <li class="selected" onclick="navigate.home.hackedClients()"><img src="/resources/images/icons/nav/clients.webp" decoding="async" /><span>Hacked Clients</span></li>
+            <li onclick="navigate.home.game()"><img src="/resources/images/icons/nav/game.webp" decoding="async" /><span>Game</span></li>
+            <li onclick="navigate.servers()"><img src="/resources/images/icons/nav/servers.webp" decoding="async" /><span>Server List</span></li>
+            <li onclick="navigate.addons.mods()"><img src="/resources/images/icons/nav/mods.webp" decoding="async" /><span>Mods</span></li>
+            <li onclick="navigate.articles()"><img src="/resources/images/icons/nav/articles.webp" decoding="async" /><span>Tutorials</span></li>
+            <li onclick="navigate.settings.general()"><img src="/resources/images/icons/nav/settings.webp" decoding="async" /><span>Settings</span></li>
           </nav>
         </div>
         <div class="main-panel">
@@ -40,17 +41,17 @@
             </ul>
           </div>
           <div class="main-content">
-            <img class="cover-image" src="/resources/images/covers/clients.webp" />
+            <img class="cover-image" src="/resources/images/covers/clients.webp" decoding="async" fetchpriority="high" />
             <div class="installations">
               <div>
                 <span class="selector" onclick="versionSelector.toggle()">Select a hacked client</span>
                 <div class="options">
                   <div onclick="game.select('/home/hacked-clients/DragonX2.html', 'DragonX2')">
-                    <img src="/resources/images/icons/clients/eagler.webp" />
+                    <img src="/resources/images/icons/clients/eagler.webp" decoding="async" />
                     <span>DragonX2</span>
                   </div>
                   <div onclick="game.select('/home/hacked-clients/WurstX.html', 'WurstX')">
-                    <img src="/resources/images/icons/clients/eagler.webp" />
+                    <img src="/resources/images/icons/clients/eagler.webp" decoding="async" />
                     <span>WurstX</span>
                   </div>
                 </div>
