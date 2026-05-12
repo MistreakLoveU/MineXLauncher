@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EaglercraftZ WASM - MineXLauncher</title>
+    <link rel="icon" type="image/webp" href="/resources/images/icons/clients/eagler.webp" />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background: #000;
+      }
+      iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+      }
+      .loading {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background: #000;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading">Loading EaglercraftZ WASM...</div>
+    <iframe
+      id="clientFrame"
+      src="https://eaglercraftz.pages.dev/wasm/builds/0.1.0/"
+      allowfullscreen
+      sandbox="allow-forms allow-scripts allow-same-origin allow-popups"
+    ></iframe>
+    <script>
+      const frame = document.getElementById('clientFrame');
+      const loader = document.querySelector('.loading');
+      frame.addEventListener('load', () => {
+        if (loader) loader.remove();
+      });
+    </script>
+  </body>
+</html>
