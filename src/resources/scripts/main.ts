@@ -262,12 +262,6 @@ const navigate = {
 		storage.session.set('lastPage', navUrl);
 		window.location.href = navUrl;
 	},
-	hackedClients: function () {
-		document.body.classList.add('loading');
-		const navUrl = '/hacked-clients/';
-		storage.session.set('lastPage', navUrl);
-		window.location.href = navUrl;
-	},
 	archive: function () {
 		document.body.classList.add('loading');
 		const navUrl = '/archive/';
