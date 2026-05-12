@@ -155,9 +155,13 @@ const game = {
 								| 'error'
 							)[]
 						).forEach((type) => {
-							if (window.gameWindowIframe)
-								window.gameWindowIframe.console[type] = (msg: string) =>
-									consoleLog(type, msg);
+							try {
+								if (window.gameWindowIframe)
+									window.gameWindowIframe.console[type] = (msg: string) =>
+										consoleLog(type, msg);
+							} catch (error) {
+								// Ignore cross-origin iframe console access errors.
+							}
 						});
 					}
 					window.gameWindow.focus();
@@ -176,18 +180,22 @@ const game = {
 					clearInterval(waitForCrash);
 					game.stop(undefined, { killed: true });
 				} else {
-					window.gameWindowIframe?.document
-						.querySelectorAll('div')
-						.forEach((element: HTMLElement) => {
-							if (
-								element.innerText.includes(
-									"Game Crashed! I have fallen and I can't get up!",
-								)
-							) {
-								clearInterval(waitForCrash);
-								game.stop(element.innerText);
-							}
-						});
+					try {
+						window.gameWindowIframe?.document
+							.querySelectorAll('div')
+							.forEach((element: HTMLElement) => {
+								if (
+									element.innerText.includes(
+										"Game Crashed! I have fallen and I can't get up!",
+									)
+								) {
+									clearInterval(waitForCrash);
+									game.stop(element.innerText);
+								}
+							});
+					} catch (error) {
+						// Ignore cross-origin iframe DOM access errors.
+					}
 				}
 			}, 50);
 		}
