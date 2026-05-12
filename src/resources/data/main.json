@@ -43,6 +43,12 @@
 	],
 	"updates": [
 		{
+			"version": "2.4.1",
+			"changelog": [
+				"Added Starlike Client"
+			]
+		},
+		{
 			"version": "2.4",
 			"changelog": [
 				"Added EaglercraftZ WASM client",
