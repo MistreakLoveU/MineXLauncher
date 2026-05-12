@@ -43,6 +43,14 @@
 	],
 	"updates": [
 		{
+			"version": "2.4",
+			"changelog": [
+				"Added EaglercraftZ WASM client",
+				"Added EaglercraftZ JS client",
+				"Both clients run fullscreen within the launcher"
+			]
+		},
+		{
 			"version": "2.3",
 			"changelog": [
 				"Added EaglerForge client",
