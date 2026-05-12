@@ -43,6 +43,12 @@
 	],
 	"updates": [
 		{
+			"version": "2.4.3",
+			"changelog": [
+				"Added resent WASM 5.0 client"
+			]
+		},
+		{
 			"version": "2.4.2",
 			"changelog": [
 				"Added Eaglercraft JS client for 1.8.8",
