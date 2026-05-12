@@ -43,6 +43,12 @@
 	],
 	"updates": [
 		{
+			"version": "2.4.4",
+			"changelog": [
+				"Updated Resent to 5.1"
+			]
+		},
+		{
 			"version": "2.4.3",
 			"changelog": [
 				"Added resent WASM 5.0 client"
